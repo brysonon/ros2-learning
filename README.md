@@ -1,2 +1,5 @@
 # ros2-learning
-Basic use of ROS2 publishing and subscribing
+My journey learning ROS2!
+
+📓 Learning notes: [notes.md](notes.md)
+
