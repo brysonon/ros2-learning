@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from datetime import datetime
 
 
 class MySubscriber(Node):
@@ -14,7 +15,8 @@ class MySubscriber(Node):
         )
 
     def listener_callback(self, msg):
-        print(f"I heard: {msg.data}", flush=True)
+        now_str = datetime.now().strftime("%H:%M:%S")
+        print(f"{now_str} | I heard: {msg.data}", flush=True)
         self.get_logger().info(f"I heard: {msg.data}")
 
 

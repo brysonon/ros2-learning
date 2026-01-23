@@ -17,5 +17,6 @@ def generate_launch_description():
             name='subscriber_node',
             output='screen',
             emulate_tty=True,
+            parameters=[{'period': 0.2}]
         )
     ])
