@@ -14,6 +14,7 @@ class MySubscriber(Node):
         )
 
     def listener_callback(self, msg):
+        print(f"I heard: {msg.data}", flush=True)
         self.get_logger().info(f"I heard: {msg.data}")
 
 
