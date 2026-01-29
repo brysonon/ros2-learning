@@ -27,6 +27,8 @@ setup(
         'console_scripts': [
             'publisher = my_first_pkg.publisher:main',
             'subscriber = my_first_pkg.subscriber:main',
+            'fibonacci_action_server = my_first_pkg.fibonacci_action_server:main',
+            'fibonacci_action_client = my_first_pkg.fibonacci_action_client:main',
         ],
     },
 )
